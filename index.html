@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>STYLIST.AE — Premium Domain For Sale</title>
+  <title>STYLIST.AE -- Premium Domain For Sale</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@100;200;300&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -21,8 +21,6 @@
       font-family: 'Josefin Sans', sans-serif;
       overflow-x: hidden;
     }
-
-    /* Grain */
     body::before {
       content: '';
       position: fixed;
@@ -33,7 +31,7 @@
       opacity: 0.35;
     }
 
-    /* ── HERO ── */
+    /* HERO */
     .hero {
       min-height: 100vh;
       display: flex;
@@ -83,7 +81,6 @@
       animation: fadeUp 1s ease 0.2s both;
     }
     .hero-domain .ae { color: var(--gold); font-style: italic; }
-
     .hero-tagline {
       font-size: 14px;
       letter-spacing: 4px;
@@ -93,7 +90,6 @@
       line-height: 2.2;
       animation: fadeUp 1s ease 0.4s both;
     }
-
     .price-badge {
       margin-top: 48px;
       display: inline-flex;
@@ -134,7 +130,6 @@
       text-transform: uppercase;
       margin-top: 8px;
     }
-
     .contact-info {
       margin-top: 32px;
       font-size: 14px;
@@ -149,7 +144,6 @@
       transition: color 0.3s;
     }
     .contact-info a:hover { color: var(--gold-light); }
-
     .scroll-cta {
       margin-top: 56px;
       display: flex;
@@ -181,7 +175,7 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    /* ── FORM ── */
+    /* FORM */
     .form-section {
       padding: 120px 30px;
       max-width: 640px;
@@ -262,7 +256,6 @@
       color: var(--gold-light);
       width: 100%;
     }
-
     .btn-submit {
       display: flex;
       align-items: center;
@@ -308,7 +301,6 @@
       transform: rotate(45deg);
     }
     .btn-submit:hover .btn-arrow { width: 28px; }
-
     .success-msg {
       display: none;
       text-align: center;
@@ -330,7 +322,7 @@
       text-transform: uppercase;
     }
 
-    /* ── FOOTER ── */
+    /* FOOTER */
     .divider { width: 100%; height: 1px; background: linear-gradient(to right, transparent, rgba(184,151,90,0.12), transparent); }
     footer {
       padding: 40px 60px;
@@ -363,7 +355,6 @@
       0%, 100% { opacity: 1; }
       50% { opacity: 0.3; }
     }
-
     @media (max-width: 600px) {
       .form-row { grid-template-columns: 1fr; }
       .corner { display: none; }
@@ -382,7 +373,7 @@
 
     <div class="hero-eyebrow">Premium .ae Domain For Sale</div>
     <div class="hero-domain">Stylist<span class="ae">.ae</span></div>
-    <div class="hero-tagline">One word · Dubai & UAE · Luxury Beauty & Fashion</div>
+    <div class="hero-tagline">One word &middot; Dubai &amp; UAE &middot; Luxury Beauty &amp; Fashion</div>
 
     <div class="price-badge">
       <div class="price-label">Asking Price</div>
@@ -391,8 +382,8 @@
     </div>
 
     <div class="contact-info">
-      Contact directly &nbsp;·&nbsp;
-      <a href="/cdn-cgi/l/email-protection#5d2e292431342e293c3873323b3b382f1d3a303c3431733e3230"><span class="__cf_email__" data-cfemail="c4b7b0bda8adb7b0a5a1eaaba2a2a1b684a3a9a5ada8eaa7aba9">[email&#160;protected]</span></a>
+      Contact directly &nbsp;&middot;&nbsp;
+      <a id="cemail" href="#">Loading...</a>
     </div>
 
     <div class="scroll-cta" onclick="document.getElementById('offer').scrollIntoView({behavior:'smooth'})">
@@ -406,7 +397,7 @@
     <div class="section-label">Acquisition</div>
     <h2 class="section-title">Submit Your <em>Offer</em></h2>
     <div class="section-sub">
-      All serious offers considered · Reply within 24h<br>
+      All serious offers considered &middot; Reply within 24h<br>
       Secure transfer via Dan.com escrow
     </div>
 
@@ -414,27 +405,27 @@
       <div class="form-row">
         <div class="field">
           <label>First Name *</label>
-          <input type="text" id="firstName" placeholder="John" required>
+          <input type="text" id="firstName" name="firstName" placeholder="John" required>
         </div>
         <div class="field">
           <label>Last Name *</label>
-          <input type="text" id="lastName" placeholder="Smith" required>
+          <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
         </div>
       </div>
       <div class="field">
         <label>Email Address *</label>
-        <input type="email" id="email" placeholder="john@yourbusiness.com" required>
+        <input type="email" id="email" name="email" placeholder="john@yourbusiness.com" required>
       </div>
       <div class="field">
         <label>Your Offer *</label>
         <div class="offer-wrapper">
           <span class="currency">$</span>
-          <input type="number" id="offerAmount" placeholder="1500" min="500" required>
+          <input type="number" id="offerAmount" name="offer" placeholder="1500" min="500" required>
         </div>
       </div>
       <div class="field">
         <label>Message (Optional)</label>
-        <textarea id="message" rows="3" placeholder="Tell us about your project..."></textarea>
+        <textarea id="message" name="message" rows="3" placeholder="Tell us about your project..."></textarea>
       </div>
       <button class="btn-submit" onclick="submitOffer()">
         <span>Send Offer</span>
@@ -443,7 +434,7 @@
     </div>
 
     <div class="success-msg" id="successMsg">
-      <div class="check">✦</div>
+      <div class="check">&#10022;</div>
       <p>Your offer has been sent.</p>
       <small>We will reply to your email within 24 hours</small>
     </div>
@@ -453,20 +444,30 @@
 
   <footer>
     <div class="footer-brand">Stylist.ae</div>
-    <div class="footer-note">© 2025 · All rights reserved</div>
+    <div class="footer-note">&copy; 2025 &middot; All rights reserved</div>
     <div class="footer-secure">
       <div class="secure-dot"></div>
-      Secure Transfer · Dan.com Escrow
+      Secure Transfer &middot; Dan.com Escrow
     </div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    function submitOffer() {
-      const firstName = document.getElementById('firstName').value.trim();
-      const lastName  = document.getElementById('lastName').value.trim();
-      const email     = document.getElementById('email').value.trim();
-      const offer     = document.getElementById('offerAmount').value.trim();
-      const message   = document.getElementById('message').value.trim();
+  <script>
+    // Set email via JS to prevent Cloudflare encoding
+    (function() {
+      var u = 'stylistae.offer';
+      var d = 'gmail.com';
+      var e = u + '@' + d;
+      var el = document.getElementById('cemail');
+      el.href = 'mailto:' + e;
+      el.textContent = e;
+    })();
+
+    async function submitOffer() {
+      var firstName = document.getElementById('firstName').value.trim();
+      var lastName  = document.getElementById('lastName').value.trim();
+      var email     = document.getElementById('email').value.trim();
+      var offer     = document.getElementById('offerAmount').value.trim();
+      var message   = document.getElementById('message').value.trim();
 
       if (!firstName || !lastName || !email || !offer) {
         alert('Please fill in all required fields.');
@@ -481,10 +482,34 @@
         return;
       }
 
-      const subject = encodeURIComponent(`Offer for Stylist.ae — $${offer}`);
-      const body = encodeURIComponent(
-        `First Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nOffer: $${offer}` +
-        (message ? `\n\nMessage:\n${message}` : '')
-      );
+      var btn = document.querySelector('.btn-submit span');
+      btn.textContent = 'Sending...';
 
-      window.
+      try {
+        var res = await fetch('https://formspree.io/f/xreybkgn', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({
+            firstName: firstName,
+            lastName: lastName,
+            email: email,
+            offer: '$' + offer,
+            message: message
+          })
+        });
+
+        if (res.ok) {
+          document.getElementById('offerForm').style.display = 'none';
+          document.getElementById('successMsg').style.display = 'block';
+        } else {
+          btn.textContent = 'Send Offer';
+          alert('Something went wrong. Please try again.');
+        }
+      } catch(err) {
+        btn.textContent = 'Send Offer';
+        alert('Connection error. Please try again.');
+      }
+    }
+  </script>
+</body>
+</html>
